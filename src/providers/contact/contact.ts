@@ -17,7 +17,6 @@ export class ContactProvider {
 
       })
      }
-
      
   get(key: string) {
     return this.db.object(this.PATH + key)
@@ -25,7 +24,6 @@ export class ContactProvider {
       .map(c => {
         return { key: c.key, ...c.payload.val() };
       })
-
   }
 
   save(contact: any){
