@@ -39,10 +39,12 @@ contact: any;
       this.setupPageTitle();
   }
 
+  //metodos//
  private setupPageTitle(){
-   this.title = this.navParams.data.contact ? 'Alterado contato' : 'Novo contato';
+   this.title = this.navParams.data.contact ? 'Contacto Modificado' : 'Nuevo Contacto';
  }
 
+ //formulario para ingresar datos, con validacion de caracteres//
  createForm() {
    this.form = this.formBuilder.group({
      key: [this.contact.key],
@@ -55,12 +57,12 @@ contact: any;
    if (this.form.valid) {
      this.provider.save(this.form.value)
      .then(() => {
-       this.toast.create({message: 'Contato salvo com sucesso.', duration: 3000}).present();
+       this.toast.create({message: 'Contacto Guardado con Exito.', duration: 3000}).present();
        this.navCtrl.pop();
 
      })
      .catch((e) => {
-      this.toast.create({message: 'error ao salvo com sucesso.', duration: 3000}).present();
+      this.toast.create({message: 'Error al guardar Contacto.', duration: 3000}).present();
       console.error(e);
 
      });

@@ -7,6 +7,7 @@ import { Observable } from 'rxjs/observable';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
   contacts: Observable<any>;
 
@@ -16,7 +17,7 @@ export class HomePage {
     this.contacts = this.provider.getAll();
 
   }
-
+// metodos  //
   newContact() {
     this.navCtrl.push('ContactEditPage');
   }
