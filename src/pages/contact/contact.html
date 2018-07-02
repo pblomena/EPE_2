@@ -6,7 +6,6 @@
   </ion-navbar>
 
 </ion-header>
-
 <ion-content padding>
   <form [formGroup]="form">
 
@@ -14,7 +13,6 @@
     <ion-label stacked>Nombre</ion-label>
     <ion-input type="text" formControlName="name"></ion-input>
     </ion-item>
-
     
       <ion-item *ngIf="!form.controls.name.valid && (form.controls.name.dirty || form.controls.name.touched)" color="danger">
         <div [hidden]="!form.controls.name.errors.required">
