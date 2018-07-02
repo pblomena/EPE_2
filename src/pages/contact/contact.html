@@ -2,7 +2,11 @@
 <ion-header>
 
   <ion-navbar color="primary">
+<<<<<<< HEAD
     <ion-title>contact</ion-title>
+=======
+    <ion-title>contactos</ion-title>
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
   </ion-navbar>
 
 </ion-header>
@@ -12,14 +16,22 @@
   <form [formGroup]="form">
 
     <ion-item>
+<<<<<<< HEAD
     <ion-label stacked>Nome</ion-label>
+=======
+    <ion-label stacked>Nombre</ion-label>
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
     <ion-input type="text" formControlName="name"></ion-input>
     </ion-item>
 
     
       <ion-item *ngIf="!form.controls.name.valid && (form.controls.name.dirty || form.controls.name.touched)" color="danger">
         <div [hidden]="!form.controls.name.errors.required">
+<<<<<<< HEAD
           O campo e obrigatorio
+=======
+          Campo Obligatorio
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
         </div>
       </ion-item>
 
@@ -31,12 +43,20 @@
 
             <ion-item *ngIf="!form.controls.tel.valid && (form.controls.tel.dirty || form.controls.tel.touched)" color="danger">
               <div [hidden]="!form.controls.tel.errors.required">
+<<<<<<< HEAD
                 O campo e obrigatorio
+=======
+                Campo Obligatorio
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
               </div>
             </ion-item>
 
             <div padding>
+<<<<<<< HEAD
               <button ion-button block type="sumit"[disabled]="!form.valid" (click)="onSubmit()">Salvar</button>
+=======
+              <button ion-button block type="sumit"[disabled]="!form.valid" (click)="onSubmit()">Guardar</button>
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
             </div>
           </form>
 </ion-content>

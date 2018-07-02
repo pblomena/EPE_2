@@ -2,12 +2,17 @@
   <ion-navbar color="primary">
     <ion-title>
       Contactos
+<<<<<<< HEAD
     </ion-title>
+=======
+     </ion-title>
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
+<<<<<<< HEAD
   <ion-list>
   <ion-item-sliding *ngFor="let contact of contacts | async">
 
@@ -18,6 +23,18 @@
 
     <ion-item-options side="left">
       <button ion-button color="secondary" (click)="editContact(contact)">
+=======
+   <ion-list>
+  <ion-item-sliding *ngFor="let contact of contacts | async">
+
+    <ion-item>
+        <h1>{{ contact.name }}</h1>
+        <p>{{ contact.tel }}</p>
+    </ion-item>
+
+    <ion-item-options side="left">
+        <button ion-button color="secondary" (click)="editContact(contact)">
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
         <ion-icon name="create"></ion-icon>
       </button>
       <button ion-button color="danger" (click)="removeContact(contact.key)">
@@ -25,9 +42,14 @@
           </button>
     </ion-item-options>
 
+<<<<<<< HEAD
   </ion-item-sliding> 
 </ion-list>
  
+=======
+  </ion-item-sliding>
+  </ion-list>
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
   <ion-fab bottom right>
     <button ion-fab color="primary" (click)="newContact()">
       <ion-icon name="add"></ion-icon>

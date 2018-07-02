@@ -26,12 +26,15 @@
     "@ionic-native/status-bar": "4.8.0",
     "@ionic/storage": "2.1.3",
     "angularfire2": "^5.0.0-rc.11",
+<<<<<<< HEAD
     "cordova-android": "7.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.19",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-whitelist": "^1.3.3",
+=======
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
     "firebase": "^5.1.0",
     "firebase-admin": "^5.12.1",
     "ionic-angular": "3.9.2",

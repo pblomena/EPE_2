@@ -40,7 +40,11 @@ contact: any;
   }
 
  private setupPageTitle(){
+<<<<<<< HEAD
    this.title = this.navParams.data.contact ? 'Alterado contato' : 'Novo contato';
+=======
+   this.title = this.navParams.data.contact ? 'Contacto Modificado' : 'Nuevo Contacto';
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
  }
 
  createForm() {
@@ -55,12 +59,20 @@ contact: any;
    if (this.form.valid) {
      this.provider.save(this.form.value)
      .then(() => {
+<<<<<<< HEAD
        this.toast.create({message: 'Contato salvo com sucesso.', duration: 3000}).present();
+=======
+       this.toast.create({message: 'Contacto Guardado con Exito.', duration: 3000}).present();
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
        this.navCtrl.pop();
 
      })
      .catch((e) => {
+<<<<<<< HEAD
       this.toast.create({message: 'error ao salvo com sucesso.', duration: 3000}).present();
+=======
+      this.toast.create({message: 'Error al guardar Contacto.', duration: 3000}).present();
+>>>>>>> 2f883100f91c6c5451e95a9aa6d382ecc8e80b23
       console.error(e);
 
      });
