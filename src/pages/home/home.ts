@@ -23,7 +23,7 @@ export class HomePage {
   }
 editContact(contact: any) {
   this.navCtrl.push('ContactEditPage', {contact: contact});
- //this.navCtrl.push('ContactEditPage', { key: contact.key});
+ 
 
 
 }
