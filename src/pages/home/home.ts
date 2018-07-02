@@ -31,11 +31,11 @@ removeContact(key: string) {
   if (key){
   this.provider.remove(key)
   .then(() => {
-    this.toast.create({ message: 'contacto removido sucesso.', duration: 3000}).present();
+    this.toast.create({ message: 'Contacto Removido Exitosamente.', duration: 3000}).present();
 
   })
   .catch((e) => {
-    this.toast.create({ message: 'error removido sucesso.', duration: 3000}).present();
+    this.toast.create({ message: 'Error al remover Contacto.', duration: 3000}).present();
 
   })
 
