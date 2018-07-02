@@ -39,10 +39,7 @@ export class ContactProvider {
 
         this.db.list(this.PATH)
         .push({ name: contact.name, tel: contact.tel })
-        .then(() => resolve());
-        
-
-      
+        .then(() => resolve());  
       }
     })
 
