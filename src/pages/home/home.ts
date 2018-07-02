@@ -17,7 +17,7 @@ export class HomePage {
     this.contacts = this.provider.getAll();
 
   }
-// metodos  //
+// metodos//
   newContact() {
     this.navCtrl.push('ContactEditPage');
   }
