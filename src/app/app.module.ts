@@ -7,14 +7,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+import { PrincipalPage } from '../pages/principal/principal';
+
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { ContactProvider } from '../providers/contact/contact';
+import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    PrincipalPage
+    
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,8 @@ import { ContactProvider } from '../providers/contact/contact';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    PrincipalPage
   ],
   providers: [
     StatusBar,

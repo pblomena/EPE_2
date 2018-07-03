@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { HomePage } from '../home/home';
+
 /**
  * Generated class for the PrincipalPage page.
  *
@@ -17,9 +19,18 @@ export class PrincipalPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PrincipalPage');
+  irMascotas(){
+    this.navCtrl.push('MascotasPage');
   }
+
+  irHome(){
+    this.navCtrl.push(HomePage);
+  }
+  
+  irNosotros(){
+    this.navCtrl.push('NosotrosPage');
+  }
+
+  
 
 }
