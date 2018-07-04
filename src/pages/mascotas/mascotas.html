@@ -26,12 +26,14 @@
             quieran y cuiden. Juguetona y dócil con los niños. 
           </p>
         </ion-card-content>
-        <ion-col text-right>
-            <button ion-button clear small color="danger" icon-start>
-              <ion-icon name='share-alt'></ion-icon>
-              Compartir
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small (tap)="tapEvent($event)">
+              <ion-icon name="thumbs-up" ></ion-icon>
+              <div>{{tap}} Likes</div>
             </button>
-    </ion-col>
+          </ion-col>
+        </ion-row>
       </ion-card>
 
       <ion-card>
@@ -45,6 +47,14 @@
               de su nueva familia humana. Saltarín y juguetón será de tamaño grande. 
             </p>
           </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small (tap1)="tapEvent($event)">
+                <ion-icon name="thumbs-up" ></ion-icon>
+                <div>{{tap}} Likes</div>
+              </button>
+            </ion-col>
+          </ion-row>
         </ion-card>
 
       <ion-card>
@@ -56,10 +66,18 @@
             <p>
               Ex callejerito, que de seguro te robará el corazón, mordedor y guardían.
               Muy tranquilo con los niños, ven y conócelo.  
-            
             </p>
           </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small (tap2)="tapEvent($event)">
+                <ion-icon name="thumbs-up" ></ion-icon>
+                <div>{{tap}} Likes</div>
+              </button>
+            </ion-col>
+          </ion-row>
         </ion-card>
+
         <ion-card>
             <img src="/assets/imgs/gato.jpg"/>
             <ion-card-content>
@@ -71,6 +89,14 @@
                 familias que viven en departamentos. Es tierno, tranquilo y ronroneador.
               </p>
             </ion-card-content>
+            <ion-row>
+              <ion-col>
+                <button ion-button icon-start clear small (tap3)="tapEvent($event)">
+                  <ion-icon name="thumbs-up" ></ion-icon>
+                  <div>{{tap}} Likes</div>
+                </button>
+              </ion-col>
+            </ion-row>
           </ion-card>
 
           <ion-card>
@@ -84,6 +110,14 @@
                   y espera ansioso por una mami humana que lo acaricie mientras ronronea.
                 </p>
               </ion-card-content>
+              <ion-row>
+                <ion-col>
+                  <button ion-button icon-start clear small (tap4)="tapEvent($event)">
+                    <ion-icon name="thumbs-up" ></ion-icon>
+                    <div>{{tap}} Likes</div>
+                  </button>
+                </ion-col>
+              </ion-row>
             </ion-card>
 
             <ion-card>
@@ -97,5 +131,13 @@
                     lo rescatamos arrancando de unos perros y es un excelente escalador. 
                   </p>
                 </ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <button ion-button icon-start clear small (tap5)="tapEvent($event)">
+                      <ion-icon name="thumbs-up" ></ion-icon>
+                      <div>{{tap}} Likes</div>
+                    </button>
+                  </ion-col>
+                </ion-row>
               </ion-card>
 </ion-content>
